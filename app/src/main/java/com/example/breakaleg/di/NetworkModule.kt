@@ -23,7 +23,7 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun provideMovieApi(retrofit: Retrofit): AgePredictionApi {
+    fun provideApi(retrofit: Retrofit): AgePredictionApi {
         return retrofit.create(AgePredictionApi::class.java)
     }
 }
